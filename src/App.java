@@ -6,12 +6,11 @@ public class App {
         System.out.println("enter a number (enter exit to quit program): ");
         String input = scan.nextLine();
 
-        while(!(input.equals("exit")));
+        while(!(input.equals("exit")))
         {
             try
             {
-              //  int num = Integer.parseInt(input);
-              int num = 20;
+                int num = Integer.parseInt(input);
                 factor(num);
             }
             catch(NumberFormatException err)
@@ -30,13 +29,12 @@ public class App {
 
     public static void factor(int num)
     {
-        /*for(int val = num; val <= num; val--)
+        for(int val = num; val <= num && val > 0; val--)
         {
             if(num % val == 0)
             {
                 System.out.println(val);
             }
-        }*/
-        System.out.println("loop works");
+        }
     }
 }
